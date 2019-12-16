@@ -31,7 +31,7 @@
 	<div class="hd_top_manu clearfix">
 					<ul class="clearfix">
 						<li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！
-						<a href="${pageContext.request.contextPath }/login.jsp" class="red">
+						<a href="${pageContext.request.contextPath }/login" class="red">
 						<c:if test="${ not empty user.username}">
 							${user.username} <style>#registered{display: none}</style>
 						</c:if>
@@ -41,13 +41,13 @@
 						<c:if test="${empty user.username}">
 							新用户
 						</c:if>
-						<a href="${pageContext.request.contextPath }/registered.jsp"class="red" id='registered'>[免费注册]</a>
+						<a href="${pageContext.request.contextPath }/registered"class="red" id='registered'>[免费注册]</a>
 						</li>
 						<li class="hd_menu_tit" data-addclass="hd_menu_hover">
 						<a href="${pageContext.request.contextPath }/orderInformationServlet">我的订单</a>
 						</li>
 						<li class="hd_menu_tit" data-addclass="hd_menu_hover">
-						<a href="${pageContext.request.contextPath }/Cart.jsp">购物车</a>
+						<a href="${pageContext.request.contextPath }/Cart">购物车</a>
 						</li>
 						<li class="hd_menu_tit" data-addclass="hd_menu_hover">
 						<a href="#">联系我们</a></li>
@@ -56,7 +56,7 @@
 							<div class="hd_menu_list">
 								<ul>
 									<li><a
-										href="${pageContext.request.contextPath }/Feedback.jsp">常见问题</a></li>
+										href="${pageContext.request.contextPath }/Feedback">常见问题</a></li>
 									<li><a href="#">在线退换货</a></li>
 									<li><a href="#">在线投诉</a></li>
 									<li><a href="#">配送范围</a></li>

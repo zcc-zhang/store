@@ -56,7 +56,7 @@
 				<div class="hd_top_manu clearfix">
 					<ul class="clearfix">
 						<li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！
-						<a href="${pageContext.request.contextPath }/login.jsp" class="red">
+						<a href="${pageContext.request.contextPath }/login" class="red">
 						<c:if test="${ not empty user.username}">
 							${user.username} <style>#registered{display: none}</style>
 						</c:if>
@@ -66,10 +66,10 @@
 						<c:if test="${empty user.username}">
 							新用户
 						</c:if>
-						<a href="${pageContext.request.contextPath }/registered.jsp"class="red" id='registered'>[免费注册]</a>
+						<a href="${pageContext.request.contextPath }/registered"class="red" id='registered'>[免费注册]</a>
 						</li>
 						<li class="hd_menu_tit" data-addclass="hd_menu_hover">
-						<a href="${pageContext.request.contextPath }/orderInformationServlet">我的订单</a>
+						<a href="${pageContext.request.contextPath }/queryOredrform?status=2">我的订单</a>
 						</li>
 						<li class="hd_menu_tit" data-addclass="hd_menu_hover">
 						<a href="${pageContext.request.contextPath }/shoppingTrolleyList">购物车</a>
@@ -81,7 +81,7 @@
 							<div class="hd_menu_list">
 								<ul>
 									<li><a
-										href="${pageContext.request.contextPath }/Feedback.jsp">常见问题</a></li>
+										href="${pageContext.request.contextPath }/Feedback">常见问题</a></li>
 									<li><a href="#">在线退换货</a></li>
 									<li><a href="#">在线投诉</a></li>
 									<li><a href="#">配送范围</a></li>
@@ -123,32 +123,6 @@
 				</div>
 				<div class="dorpdown-layer">
 					<div class="spacer"></div>
-					<!--<div class="prompt"></div><div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div>-->
-					<!-- <ul class="p_s_list">
-						<li>
-							<div class="img">
-								<img src="images3/O1CN01EolndW1WKFGRmdAtc_!!0-item_pic.jpg_250x250.jpg_.webp.jpg">
-							</div>
-							<div class="content">
-								<p>
-									<a href="#">产品名称</a>
-								</p>
-								<p>颜色分类:紫花8255尺码:XL</p>
-							</div>
-							<div class="Operations">
-								<p class="Price">￥55.00</p>
-								<p>
-									<a href="#">删除</a>
-								</p>
-							</div>
-						</li>
-					</ul> -->
-					<!-- <div class="Shopping_style">
-						<div class="p-total">
-							共<b>1</b>件商品 共计<strong>￥55.00</strong>
-						</div>
-						<a href="#" title="去购物车结算" id="btn-payforgoods" class="Shopping">去购物车结算</a>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -828,14 +802,14 @@
 				<!--菜单栏-->
 				<div class="Navigation" id="Navigation">
 					<ul class="Navigation_name">
-						<li><a href="${pageContext.request.contextPath}/index.jsp">首页</a></li>
+						<li><a href="${pageContext.request.contextPath}/index">首页</a></li>
 						<li><a href="${pageContext.request.contextPath}/browsingHistoryServlet">我的足迹</a></li>
-						<li><a href="${pageContext.request.contextPath}/Must_see.jsp">每日必看</a></li>
+						<li><a href="${pageContext.request.contextPath}/Must_see">每日必看</a></li>
 						<li><a href="${pageContext.request.contextPath}/showCommodityListServlet">产品列表</a></li>
-						<li><a href="${pageContext.request.contextPath}/Buy_Brands.jsp">限时团购</a></li>
-						<li><a href="${pageContext.request.contextPath}/Group_buy.jsp">品牌团购</a></li>
+						<li><a href="${pageContext.request.contextPath}/Buy_Brands">限时团购</a></li>
+						<li><a href="${pageContext.request.contextPath}/Group_buy">品牌团购</a></li>
 						<li><a href="#">联系我们</a></li>
-						<li><a href="${pageContext.request.contextPath}/index.jsp">简洁版</a></li>
+						<li><a href="${pageContext.request.contextPath}/index">简洁版</a></li>
 					</ul>
 				</div>
 				<script>$("#Navigation").slide({

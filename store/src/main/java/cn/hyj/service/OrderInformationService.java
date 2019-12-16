@@ -1,5 +1,8 @@
 package cn.hyj.service;
 
+import cn.hyj.entity.OrderInformation;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 
@@ -10,6 +13,8 @@ import java.util.List;
  *
  */
 public interface OrderInformationService {
+
+    List<OrderInformation> queryOrderInformation(@Param("status") Integer status);
 
 
 }

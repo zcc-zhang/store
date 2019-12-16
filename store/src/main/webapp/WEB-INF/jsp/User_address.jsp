@@ -76,7 +76,7 @@
 			);
 		});
 		var $bool = false;
-		if ('${bool}'!=null && '${bool}'!='') {
+		if ('${bool}'!=null &amp;&amp; '${bool}'!='') {
 			$bool = '${bool}';
 		}
 		if ($bool) {
@@ -84,24 +84,6 @@
 			$("#two").val("修改地址");
 		}
 	});
-	/**
-	function insertUpdate(){
-		var $name = $("input[name='name']").val();//姓名
-		var $moblie = $("input[name='moblie']").val();//手机号
-		var $address = $("input[name='address']").val();//详细地址
-		var $postal = $("input[name='postal']").val();//邮编
-		var $provid = $("input[name='province']").val();//省
-		var $cityid = $("input[name='city']").val();//市
-		var $areaid = $("input[name='county']").val();//县
-		if ($("#two").val() == "修改地址") {
-			var $shippingAddressID =$("#shipping_address_ID").text();
-			window.location.href="${pageContext.request.contextPath}/updateAddressServlet?name="+$name+"&moblie="+$moblie+"&address="+$address+"&postal="+$postal+"&id="+$shippingAddressID;
-		}else if($("#two").val() == "添加地址"){
-			$address = $provid+$cityid+$areaid+$address; //拼接
-			window.location.href="${pageContext.request.contextPath}/shippingAddressServlet?name="+$name+"&moblie="+$moblie+"&address="+$address+"&postal="+$postal+"&flag=flag";
-		}
-		
-	}**/
 	var defaults = {
 		s1 : 'provid',
 		s2 : 'cityid',
@@ -213,7 +195,7 @@
 				if(two=='添加地址')
 				{
 					$.ajax({
-						url : "${pageContext.request.contextPath}/shippingAddressServlet?flag=flag",
+						url : "${pageContext.request.contextPath}/insertShippingAddress",
 						type : 'post',
 						data : str,
 						success:callBack
@@ -239,15 +221,27 @@
 						}
 					});
 				}
-				
-			
 			}
 		});
 		function callBack()
 		{
 			window.location.reload();
 		}
-		
+		//获取当前时间
+		function  today() {
+			var today=new Date();//new 出当前时间
+			var h=today.getFullYear();//获取年
+			var m=today.getMonth();//获取月
+			if(m&lt;10){
+				m="0"+m;
+			}
+			var d=today.getDate();//获取日
+			if (d &lt; 10){
+				d="0"+d;
+			}
+			return h+"-"+m+"-"+d;//返回：年-月-日 时:分:秒
+		}
+		var date =today();
 	});
 	
 	
@@ -258,7 +252,7 @@
 <title>用户中心-地址管理</title>
 </head>
 
-<body>
+<body onload="today();">
 	<!--顶部图层-->
 	<div id="header_top">
 		<div id="top">
@@ -378,11 +372,11 @@
 						<ul class="Menu_list">
 							<li class="name">
 								<div class="Menu_name">
-									<a href="product_list.html">面部护理</a> <span>&lt;</span>
+									<a href="${pageContext.request.contextPath}/product_list.html">面部护理</a> <span>&lt;</span>
 								</div>
 								<div class="link_name">
 									<p>
-										<a href="Product_Detailed.html">茅台</a> <a href="#">五粮液</a> <a
+										<a href="${pageContext.request.contextPath}/product_Detailed.html">茅台</a> <a href="#">五粮液</a> <a
 											href="#">郎酒</a> <a href="#">剑南春</a>
 									</p>
 								</div>
@@ -464,21 +458,21 @@
 										</div>
 										<div class="Brands">
 											<a href="#" class="logo_Brands"><img
-												src="product/logo/34.jpg" /></a> <a href="#"
-												class="logo_Brands"><img src="product/logo/42.jpg" /></a> <a
+												src="${pageContext.request.contextPath}/product/logo/34.jpg" /></a> <a href="#"
+												class="logo_Brands"><img src="${pageContext.request.contextPath}/product/logo/42.jpg" /></a> <a
 												href="#" class="logo_Brands"><img
-												src="product/logo/152.jpg" /></a> <a href="#"
-												class="logo_Brands"><img src="product/logo/156.jpg" /></a>
+												src="${pageContext.request.contextPath}/product/logo/152.jpg" /></a> <a href="#"
+												class="logo_Brands"><img src="${pageContext.request.contextPath}/product/logo/156.jpg" /></a>
 											<a href="#" class="logo_Brands"><img
-												src="product/logo/458.jpg" /></a> <a href="#"
-												class="logo_Brands"><img src="product/logo/339.jpg" /></a>
+												src="${pageContext.request.contextPath}/product/logo/458.jpg" /></a> <a href="#"
+												class="logo_Brands"><img src="${pageContext.request.contextPath}/product/logo/339.jpg" /></a>
 											<a href="#" class="logo_Brands"><img
-												src="product/logo/245.jpg" /></a> <a href="#"
-												class="logo_Brands"><img src="product/logo/199.jpg" /></a>
+												src="${pageContext.request.contextPath}/product/logo/245.jpg" /></a> <a href="#"
+												class="logo_Brands"><img src="${pageContext.request.contextPath}/product/logo/199.jpg" /></a>
 											<a href="#" class="logo_Brands"><img
-												src="product/logo/618.jpg" /></a> <a href="#"
-												class="logo_Brands"><img src="product/logo/644.jpg" /></a>
-											<a href="#" class="AD_3"><img src="product/ad/2.jpg" /></a>
+												src="${pageContext.request.contextPath}/product/logo/618.jpg" /></a> <a href="#"
+												class="logo_Brands"><img src="${pageContext.request.contextPath}/product/logo/644.jpg" /></a>
+											<a href="#" class="AD_3"><img src="${pageContext.request.contextPath}/product/ad/2.jpg" /></a>
 										</div>
 									</div>
 									<!--品牌-->
@@ -489,7 +483,7 @@
 									<a href="#">身体护理</a><span>&lt;</span>
 								</div>
 								<div class="link_name">
-									<a href="Product_Detailed.html"> 面霜</a><a href="#">眼霜</a><a
+									<a href="${pageContext.request.contextPath}/product_Detailed.html"> 面霜</a><a href="#">眼霜</a><a
 										href="#"> 面膜</a><a href="#">护肤套装</a>
 
 								</div>
@@ -567,13 +561,13 @@
 				<!--菜单栏-->
 				<div class="Navigation" id="Navigation">
 					<ul class="Navigation_name">
-						<li><a href="${pageContext.request.contextPath}/index.jsp">首页</a></li>
-						<li><a href="${pageContext.request.contextPath}/Footprint.jsp">日常护理</a></li>
-						<li><a href="${pageContext.request.contextPath}/Must_see.jsp">每日必看</a></li>
+						<li><a href="${pageContext.request.contextPath}/index">首页</a></li>
+						<li><a href="${pageContext.request.contextPath}/Footprint">日常护理</a></li>
+						<li><a href="${pageContext.request.contextPath}/Must_see">每日必看</a></li>
 						<li><a href="${pageContext.request.contextPath}/showCommodityListServlet">产品列表</a></li>
-						<li><a href="${pageContext.request.contextPath}/Buy_Brands.jsp">限时团购</a></li>
-						<li><a href="${pageContext.request.contextPath}/diy.jsp">礼品DIY</a></li>
-						<li><a href="${pageContext.request.contextPath}/Group_buy.jsp">品牌团购</a></li>
+						<li><a href="${pageContext.request.contextPath}/Buy_Brands">限时团购</a></li>
+						<li><a href="${pageContext.request.contextPath}/diy">礼品DIY</a></li>
+						<li><a href="${pageContext.request.contextPath}/Group_buy">品牌团购</a></li>
 						<li><a href="#">联系我们</a></li>
 						<li><a href="${pageContext.request.contextPath}/index.jsp">简洁版</a></li>
 					</ul>
@@ -603,7 +597,7 @@
 							<p>
 								<span class="name">化海天堂</span><a href="#">[修改密码]</a>
 							</p>
-							<p>访问时间：2016-1-21 10:23</p>
+							<p>访问时间：${dateDay}</p>
 						</div>
 					</div>
 					<!--菜单列表图层-->
@@ -613,8 +607,8 @@
 						</dt>
 						<dd>
 							<ul>
-								<li><a href="User_Orderform.html"> 我的订单</a></li>
-								<li><a href="User_address.html">收货地址</a></li>
+								<li><a href="User_Orderform"> 我的订单</a></li>
+								<li><a href="User_address">收货地址</a></li>
 								<li><a href="user.php?act=booking_list"> 缺货登记</a></li>
 							</ul>
 						</dd>
@@ -677,7 +671,7 @@
 									<div class="address_title">
 										<a href="${pageContext.request.contextPath}/updateAddressServlet?id=${list.id }" class="modify" title="修改信息">
 										</a>地址信息 <a href="javascript:over('0')" class="delete "><i class="iconfont icon-close"></i></a>
-										<a href="#" style="position:absolute; top:0; right:-50; width:380px;" title="删除信息" class="del"><img src="img/del.png"/></a>
+										<a href="#" style="position:absolute; top:0; width:380px;" title="删除信息" class="del"><img src="img/del.png"/></a>
 									</div>
 									
 									<p style="display: none">${list.id }</p>
@@ -690,10 +684,10 @@
 						</c:if>
 					</div>
 					<!--下拉选择地址样式-->
-					<link href="Threelinkage/linkage.css" rel="stylesheet"
+					<link href="${pageContext.request.contextPath}/Threelinkage/linkage.css" rel="stylesheet"
 						type="text/css" />
 
-					<form action="shippingAddressServlet?flag=User_address"
+					<form action="${pageContext.request.contextPath}/insertShippingAddress"
 						method="post" class="layui-form">
 						<div class="Add_Addresss">
 							<div class="title_name">

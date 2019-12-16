@@ -275,7 +275,7 @@
 				<div class="bd">
 					<ul>
 						<form id='buyerFrom'
-							action="${pageContext.request.contextPath}/userServlet?flag=registered"
+							action="${pageContext.request.contextPath}/userServlet"
 							method="post">
 							<table border="0"
 								style="width:420px; font-size:14px; margin-top:20px;"
@@ -285,7 +285,7 @@
 										<td width="95">&nbsp;</td>
 										<td><span class="fl" style="font-size:24px;">注册</span> <span
 											class="fr">已有商城账号，<a
-												href="${pageContext.request.contextPath}/login.jsp"
+												href="${pageContext.request.contextPath}/login"
 												style="color:#ff4e00;">我要登录</a></span></td>
 										<tr height="50">
 											<td align="right"><font color="#ff4e00">*</font>&nbsp;用户名

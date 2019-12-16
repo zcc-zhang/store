@@ -22,6 +22,12 @@
     commodity_freight, subtotal, price, place_an_order_date, payment_time, affirm_date, 
     logistics_Id, STATUS
   </sql>
+    <select id="queryOrderInformation" resultMap="BaseResultMap">
+        select 
+            <include refid="Base_Column_List"/>
+        from t_order_information
+        where status = #{status}
+    </select>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
         select
         <include refid="Base_Column_List"/>

@@ -1,5 +1,7 @@
 package cn.hyj.service;
 
+import cn.hyj.entity.ShippingAddress;
+
 import java.util.List;
 
 
@@ -10,5 +12,7 @@ import java.util.List;
  *
  */
 public interface ShippingAddressService {
+
+    int insert(ShippingAddress record);
 
 }

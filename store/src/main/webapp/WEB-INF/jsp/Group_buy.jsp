@@ -30,7 +30,7 @@
             <div class="hd_top_manu clearfix">
                 <ul class="clearfix">
                     <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！
-                        <a href="${pageContext.request.contextPath }/login.jsp" class="red">
+                        <a href="${pageContext.request.contextPath }/login" class="red">
                             <c:if test="${ not empty user.username}">
                                 ${user.username}
                                 <style>#registered {
@@ -43,14 +43,14 @@
                         <c:if test="${empty user.username}">
                             新用户
                         </c:if>
-                        <a href="${pageContext.request.contextPath }/registered.jsp" class="red"
+                        <a href="${pageContext.request.contextPath }/registered" class="red"
                            id='registered'>[免费注册]</a>
                     </li>
                     <li class="hd_menu_tit" data-addclass="hd_menu_hover">
                         <a href="${pageContext.request.contextPath }/orderInformationServlet">我的订单</a>
                     </li>
                     <li class="hd_menu_tit" data-addclass="hd_menu_hover">
-                        <a href="${pageContext.request.contextPath }/Cart.jsp">购物车</a>
+                        <a href="${pageContext.request.contextPath }/Cart">购物车</a>
                     </li>
                     <li class="hd_menu_tit" data-addclass="hd_menu_hover">
                         <a href="#">联系我们</a></li>
@@ -59,7 +59,7 @@
                         <div class="hd_menu_list">
                             <ul>
                                 <li><a
-                                        href="${pageContext.request.contextPath }/Feedback.jsp">常见问题</a></li>
+                                        href="${pageContext.request.contextPath }/Feedback">常见问题</a></li>
                                 <li><a href="#">在线退换货</a></li>
                                 <li><a href="#">在线投诉</a></li>
                                 <li><a href="#">配送范围</a></li>
@@ -260,15 +260,15 @@
             <!--菜单栏-->
             <div class="Navigation" id="Navigation">
                 <ul class="Navigation_name">
-                    <li><a href="${pageContext.request.contextPath}/index.jsp">首页</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Footprint.jsp">日常护理</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Must_see.jsp">每日必看</a></li>
+                    <li><a href="${pageContext.request.contextPath}/index">首页</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Footprint">日常护理</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Must_see">每日必看</a></li>
                     <li><a href="${pageContext.request.contextPath}/showCommodityListServlet">产品列表</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Buy_Brands.jsp">限时团购</a></li>
-                    <li><a href="${pageContext.request.contextPath}/diy.jsp">礼品DIY</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Group_buy.jsp">品牌团购</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Buy_Brands">限时团购</a></li>
+                    <li><a href="${pageContext.request.contextPath}/diy">礼品DIY</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Group_buy">品牌团购</a></li>
                     <li><a href="#">联系我们</a></li>
-                    <li><a href="${pageContext.request.contextPath}/index.jsp">简洁版</a></li>
+                    <li><a href="${pageContext.request.contextPath}/index">简洁版</a></li>
                 </ul>
             </div>
             <script>$("#Navigation").slide({titCell: ".Navigation_name li"});</script>

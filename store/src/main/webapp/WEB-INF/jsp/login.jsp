@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link href="${pageContext.request.contextPath}/css/common.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="src/css/dialog.css" type="text/css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/src/css/dialog.css" type="text/css">
 <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css" />
 <link href="${pageContext.request.contextPath}/fonts/iconfont.css" rel="stylesheet" type="text/css" />
 <script src="${pageContext.request.contextPath}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -18,7 +18,7 @@
 <body>
 <div class="log_bg">
  <div class="top">
-   <div class="logo"><div class="logo_link"><a href="Index.html"><img src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/${pageContext.request.contextPath}/images/logo.png"></a></div><div class="phone">免费咨询热线：<b>400-567-4556</b></div></div>
+   <div class="logo"><div class="logo_link"><a href="index"><img src="${pageContext.request.contextPath}/images/logo.png"></a></div><div class="phone">免费咨询热线：<b>400-567-4556</b></div></div>
   </div>
  <div class="login">
    <div class="log_img"><img src="${pageContext.request.contextPath}/images/imgbg_03.png" width="611" height="425"></div>
@@ -57,7 +57,7 @@
 	                		</script>
 	                	</c:if>
                 	</span>
-                    <span class="fr">还没有商城账号，<a href="registered.jsp" style="color:#ff4e00;">立即注册</a></span>
+                    <span class="fr">还没有商城账号，<a href="${pageContext.request.contextPath}/registered" style="color:#ff4e00;">立即注册</a></span>
                 </td>
               </tr>
               <tr height="70">

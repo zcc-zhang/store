@@ -31,8 +31,9 @@ public class UserController {
         if (username.equals(user.getUsername()) && password.equals(user.getPassword())){
             request.getSession().setAttribute("user",user);
             return "forward:/WEB-INF/jsp/index.jsp";
+        }else{
+            return "index";
         }
-        return "index";
     }
 
 

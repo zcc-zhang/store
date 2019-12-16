@@ -404,11 +404,11 @@
 							<p>
 								<span class="name">化海天堂</span><a href="#">[修改密码]</a>
 							</p>
-							<p>访问时间：2016-1-21 10:23</p>
+							<p>访问时间：${dateDay}</p>
 						</div>
 					</div>
 					<!--菜单列表图层-->
-					<dl class="accountSideOption1">
+					<dl class="accountSideOptio																							n1">
 						<dt class="transaction_manage">
 							<em class="icon_1"></em>订单中心
 						</dt>
