@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.hyj.mapper.CommodityMapper">
+    <resultMap id="BaseResultMap" type="cn.hyj.entity.Commodity">
+        <id column="commodity_Id" property="commodityId" jdbcType="INTEGER"/>
+        <result column="merchant_Id" property="merchantId" jdbcType="INTEGER"/>
+        <result column="commodity_picture" property="commodityPicture" jdbcType="VARCHAR"/>
+        <result column="product_name" property="productName" jdbcType="VARCHAR"/>
+        <result column="commodity_type_Id" property="commodityTypeId" jdbcType="INTEGER"/>
+        <result column="commodity_attribute" property="commodityAttribute" jdbcType="VARCHAR"/>
+        <result column="commodity_price" property="commodityPrice" jdbcType="DECIMAL"/>
+        <result column="commodity_freight" property="commodityFreight" jdbcType="DECIMAL"/>
+        <result column="commodity_inventory" property="commodityInventory" jdbcType="INTEGER"/>
+        <result column="commodity_weight" property="commodityWeight" jdbcType="DOUBLE"/>
+        <result column="commodity_status" property="commodityStatus" jdbcType="INTEGER"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    commodity_Id, merchant_Id, commodity_picture, product_name, commodity_type_Id, commodity_attribute, 
+    commodity_price, commodity_freight, commodity_inventory, commodity_weight, commodity_status
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from t_commodity
+        where commodity_Id = #{commodityId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_commodity
+    where commodity_Id = #{commodityId,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="cn.hyj.entity.Commodity">
+    insert into t_commodity (commodity_Id, merchant_Id, commodity_picture, 
+      product_name, commodity_type_Id, commodity_attribute, 
+      commodity_price, commodity_freight, commodity_inventory, 
+      commodity_weight, commodity_status)
+    values (#{commodityId,jdbcType=INTEGER}, #{merchantId,jdbcType=INTEGER}, #{commodityPicture,jdbcType=VARCHAR}, 
+      #{productName,jdbcType=VARCHAR}, #{commodityTypeId,jdbcType=INTEGER}, #{commodityAttribute,jdbcType=VARCHAR}, 
+      #{commodityPrice,jdbcType=DECIMAL}, #{commodityFreight,jdbcType=DECIMAL}, #{commodityInventory,jdbcType=INTEGER}, 
+      #{commodityWeight,jdbcType=DOUBLE}, #{commodityStatus,jdbcType=INTEGER})
+  </insert>
+    <insert id="insertSelective" parameterType="cn.hyj.entity.Commodity">
+        insert into t_commodity
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="commodityId != null">
+                commodity_Id,
+            </if>
+            <if test="merchantId != null">
+                merchant_Id,
+            </if>
+            <if test="commodityPicture != null">
+                commodity_picture,
+            </if>
+            <if test="productName != null">
+                product_name,
+            </if>
+            <if test="commodityTypeId != null">
+                commodity_type_Id,
+            </if>
+            <if test="commodityAttribute != null">
+                commodity_attribute,
+            </if>
+            <if test="commodityPrice != null">
+                commodity_price,
+            </if>
+            <if test="commodityFreight != null">
+                commodity_freight,
+            </if>
+            <if test="commodityInventory != null">
+                commodity_inventory,
+            </if>
+            <if test="commodityWeight != null">
+                commodity_weight,
+            </if>
+            <if test="commodityStatus != null">
+                commodity_status,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="commodityId != null">
+                #{commodityId,jdbcType=INTEGER},
+            </if>
+            <if test="merchantId != null">
+                #{merchantId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityPicture != null">
+                #{commodityPicture,jdbcType=VARCHAR},
+            </if>
+            <if test="productName != null">
+                #{productName,jdbcType=VARCHAR},
+            </if>
+            <if test="commodityTypeId != null">
+                #{commodityTypeId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityAttribute != null">
+                #{commodityAttribute,jdbcType=VARCHAR},
+            </if>
+            <if test="commodityPrice != null">
+                #{commodityPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="commodityFreight != null">
+                #{commodityFreight,jdbcType=DECIMAL},
+            </if>
+            <if test="commodityInventory != null">
+                #{commodityInventory,jdbcType=INTEGER},
+            </if>
+            <if test="commodityWeight != null">
+                #{commodityWeight,jdbcType=DOUBLE},
+            </if>
+            <if test="commodityStatus != null">
+                #{commodityStatus,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="cn.hyj.entity.Commodity">
+        update t_commodity
+        <set>
+            <if test="merchantId != null">
+                merchant_Id = #{merchantId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityPicture != null">
+                commodity_picture = #{commodityPicture,jdbcType=VARCHAR},
+            </if>
+            <if test="productName != null">
+                product_name = #{productName,jdbcType=VARCHAR},
+            </if>
+            <if test="commodityTypeId != null">
+                commodity_type_Id = #{commodityTypeId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityAttribute != null">
+                commodity_attribute = #{commodityAttribute,jdbcType=VARCHAR},
+            </if>
+            <if test="commodityPrice != null">
+                commodity_price = #{commodityPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="commodityFreight != null">
+                commodity_freight = #{commodityFreight,jdbcType=DECIMAL},
+            </if>
+            <if test="commodityInventory != null">
+                commodity_inventory = #{commodityInventory,jdbcType=INTEGER},
+            </if>
+            <if test="commodityWeight != null">
+                commodity_weight = #{commodityWeight,jdbcType=DOUBLE},
+            </if>
+            <if test="commodityStatus != null">
+                commodity_status = #{commodityStatus,jdbcType=INTEGER},
+            </if>
+        </set>
+        where commodity_Id = #{commodityId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="cn.hyj.entity.Commodity">
+    update t_commodity
+    set merchant_Id = #{merchantId,jdbcType=INTEGER},
+      commodity_picture = #{commodityPicture,jdbcType=VARCHAR},
+      product_name = #{productName,jdbcType=VARCHAR},
+      commodity_type_Id = #{commodityTypeId,jdbcType=INTEGER},
+      commodity_attribute = #{commodityAttribute,jdbcType=VARCHAR},
+      commodity_price = #{commodityPrice,jdbcType=DECIMAL},
+      commodity_freight = #{commodityFreight,jdbcType=DECIMAL},
+      commodity_inventory = #{commodityInventory,jdbcType=INTEGER},
+      commodity_weight = #{commodityWeight,jdbcType=DOUBLE},
+      commodity_status = #{commodityStatus,jdbcType=INTEGER}
+    where commodity_Id = #{commodityId,jdbcType=INTEGER}
+  </update>
+</mapper>
