@@ -1,5 +1,8 @@
 package cn.hyj.service;
 
+import cn.hyj.entity.Commodity;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 
@@ -10,6 +13,11 @@ import java.util.List;
  *
  */
 public interface CommodityService {
+    /**
+     * 查询全部
+     * @return
+     */
+    List<Commodity> queryAll(String commodityPrice,  String commodityAttribute);
 
-
+    Commodity queryByPrimaryKey(Integer primaryKey);
 }
