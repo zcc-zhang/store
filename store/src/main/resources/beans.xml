@@ -48,6 +48,16 @@
     <!--注册SQLSession工厂-->
     <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sessionFactory">
         <property name="dataSource" ref="dataSource"></property>
+        <!--分页插件-->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor" id="interceptor">
+                    <property name="properties">
+                        <value></value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
 
     <!--扫描所有mapper 将自动生成的代理注入到spring中去-->
