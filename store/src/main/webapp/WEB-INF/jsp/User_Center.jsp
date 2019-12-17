@@ -6,14 +6,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="css/common.css" rel="stylesheet" type="text/css"/>
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="fonts/iconfont.css" rel="stylesheet" type="text/css"/>
-    <script src="${pageContext.request.contextPath}/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="${pageContext.request.contextPath}/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
-    <script src="${pageContext.request.contextPath}/common_js.js" type="text/javascript"></script>
-    <script src="${pageContext.request.contextPath}/footer.js" type="text/javascript"></script>
-    <script src="${pageContext.request.contextPath}/lrtk.js" type="text/javascript"></script>
+    <link href="${pageContext.request.contextPath}/css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="${pageContext.request.contextPath}/fonts/iconfont.css" rel="stylesheet" type="text/css"/>
+    <script src="${pageContext.request.contextPath}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/js/common_js.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/js/footer.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/js/lrtk.js" type="text/javascript"></script>
     <title>用户中心</title>
 </head>
 <script type="text/javascript">
@@ -587,7 +587,7 @@
                                 </c:if>
                                 <c:if test="${empty orderInformations}">
                                     <tr>
-                                        <td><img src="big/123456789.PNG"/></td>
+                                        <td><img src="${pageContext.request.contextPath}/big/123456789.PNG"/></td>
                                     </tr>
                                 </c:if>
 

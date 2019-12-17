@@ -8,21 +8,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet"
 			href="${pageContext.request.contextPath}/css/sweetalert.css" />
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="src/css/dialog.css">
-<link href="css/common.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="fonts/iconfont.css" rel="stylesheet" type="text/css" />
-<script src="${pageContext.request.contextPath}/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/common_js.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/footer.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/lrtk.js" type="text/javascript"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/src/css/dialog.css">
+<link href="${pageContext.request.contextPath}/css/common.css" rel="stylesheet" type="text/css" />
+<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css" />
+<link href="${pageContext.request.contextPath}/fonts/iconfont.css" rel="stylesheet" type="text/css" />
+<script src="${pageContext.request.contextPath}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/common_js.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/footer.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/lrtk.js" type="text/javascript"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/layui/layui.js"></script>
-<link rel="stylesheet" href="layui/css/layui.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/assets/data.js"></script>
 <script type="text/javascript"
-			src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/sweetalert-dev.js"></script>
+			src="${pageContext.request.contextPath}/js/sweetalert-dev.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/assets/province.js"></script>
 <script src="${pageContext.request.contextPath}/src/jquery.dialog.min.js"></script>
 <script type="text/javascript">
@@ -304,7 +304,7 @@
 							href="#" class="hd_menu "><em class="iconfont icon-shouji"></em>手机版</a>
 							<div class="hd_menu_list erweima">
 								<ul>
-									<img src="${pageContext.request.contextPath}/images/erweima.png" width="100px" height="100" />
+									<img src="images/erweima.png" width="100px" height="100" />
 								</ul>
 							</div></li>
 					</ul>
@@ -315,7 +315,7 @@
 		<!--顶部样式2-->
 		<div id="header " class="header page_style">
 			<div class="logo">
-				<a href="index.html"><img src="${pageContext.request.contextPath}/images/logo.png" /></a>
+				<a href="index.html"><img src="images/logo.png" /></a>
 			</div>
 			<!--结束图层-->
 			<div class="Search">
@@ -340,7 +340,7 @@
 					<ul class="p_s_list">
 						<li>
 							<div class="img">
-								<img src="${pageContext.request.contextPath}/images/tianma.png">
+								<img src="images/tianma.png">
 							</div>
 							<div class="content">
 								<p>
@@ -596,7 +596,7 @@
 					<div class="user_Head">
 						<div class="user_portrait">
 							<a href="#" title="修改头像" class="btn_link"></a> <img
-								src="${pageContext.request.contextPath}/images/people.png">
+								src="images/people.png">
 								<div class="background_img"></div>
 						</div>
 						<div class="user_name">
@@ -777,16 +777,16 @@
 	<div class="slogen">
 		<div class="index_style">
 			<ul class="wrap">
-				<li><a href="#"><img src="${pageContext.request.contextPath}/images/slogen_34.png"
+				<li><a href="#"><img src="images/slogen_34.png"
 						data-bd-imgshare-binded="1"></a> <b>安全保证</b> <span>多重保障机制
 						认证商城</span></li>
-				<li><a href="#"><img src="${pageContext.request.contextPath}/images/slogen_28.png"
+				<li><a href="#"><img src="images/slogen_28.png"
 						data-bd-imgshare-binded="2"></a> <b>正品保证</b> <span>正品行货
 						放心选购</span></li>
-				<li><a href="#"><img src="${pageContext.request.contextPath}/images/slogen_30.png"
+				<li><a href="#"><img src="images/slogen_30.png"
 						data-bd-imgshare-binded="3"></a> <b>七天无理由退换</b> <span>七天无理由保障消费权益</span>
 				</li>
-				<li><a href="#"><img src="${pageContext.request.contextPath}/images/slogen_31.png"
+				<li><a href="#"><img src="images/slogen_31.png"
 						data-bd-imgshare-binded="4"></a> <b>天天低价</b> <span>价格更低，质量更可靠</span>
 				</li>
 			</ul>
@@ -912,7 +912,7 @@
 					<div class="bjfffs"></div>
 					<dl onclick="javascript:;">
 						<dt>
-							<img src="${pageContext.request.contextPath}/images/Service1.png">
+							<img src="images/Service1.png">
 						</dt>
 						<dd>
 							<strong>QQ客服1</strong>
@@ -925,7 +925,7 @@
 					</dl>
 					<dl onclick="javascript:;">
 						<dt>
-							<img src="${pageContext.request.contextPath}/images/Service1.png">
+							<img src="images/Service1.png">
 						</dt>
 						<dd>
 							<strong>QQ客服1</strong>
@@ -944,7 +944,7 @@
 					<div class="bjfff"></div>
 					<div class="QR_code">
 						<p>
-							<img src="${pageContext.request.contextPath}/images/erweim.jpg" width="150px" height="150px"
+							<img src="images/erweim.jpg" width="150px" height="150px"
 								style=" margin-top:10px;" />
 						</p>
 						<p>微信扫一扫，关注我们</p>

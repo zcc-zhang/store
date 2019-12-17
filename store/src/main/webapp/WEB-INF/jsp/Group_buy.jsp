@@ -70,7 +70,8 @@
                             href="#" class="hd_menu "><em class="iconfont icon-shouji"></em>手机版</a>
                         <div class="hd_menu_list erweima">
                             <ul>
-                                <img src="${pageContext.request.contextPath}/images/erweima.png" width="100px" height="100"/>
+                                <img src="${pageContext.request.contextPath}/images/erweima.png" width="100px"
+                                     height="100"/>
                             </ul>
                         </div>
                     </li>
@@ -173,17 +174,28 @@
                                         </dl>
                                     </div>
                                     <div class="Brands">
-                                        <a href="#" class="logo_Brands"><img src="product/logo/34.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/42.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/152.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/156.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/458.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/339.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/245.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/199.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/618.jpg"/></a>
-                                        <a href="#" class="logo_Brands"><img src="product/logo/644.jpg"/></a>
-                                        <a href="#" class="AD_3"><img src="product/ad/2.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/34.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/42.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/152.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/156.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/458.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/339.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/245.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/199.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/618.jpg"/></a>
+                                        <a href="#" class="logo_Brands"><img
+                                                src="${pageContext.request.contextPath}/product/logo/644.jpg"/></a>
+                                        <a href="#" class="AD_3"><img
+                                                src="${pageContext.request.contextPath}/product/ad/2.jpg"/></a>
                                     </div>
                                 </div>
                                 <!--品牌-->
@@ -283,7 +295,8 @@
     <div class="group_buy  clearfix">
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_21.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_21.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">透真玻尿酸多效保湿蚕丝面膜贴20片（补水保湿滋润护肤品套装女）</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -295,7 +308,8 @@
         </div>
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_5.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_5.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -307,7 +321,8 @@
         </div>
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_15.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_15.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -319,7 +334,8 @@
         </div>
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_9.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_9.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -331,7 +347,8 @@
         </div>
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_19.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_19.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -343,7 +360,8 @@
         </div>
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_8.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_8.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -355,7 +373,8 @@
         </div>
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_10.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_10.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -367,7 +386,8 @@
         </div>
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_11.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_11.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -380,7 +400,8 @@
 
         <div class="group_list">
             <ul class="group_info">
-                <li class="group_img"><a href="#"><img src="product/p_12.jpg"></a></li>
+                <li class="group_img"><a href="#"><img src="${pageContext.request.contextPath}/product/p_12.jpg"></a>
+                </li>
                 <li class="group_name">
                     <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
                     <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
@@ -396,21 +417,25 @@
     <div class="index_style">
         <ul class="wrap">
             <li>
-                <a href="#"><img src="${pageContext.request.contextPath}/images/slogen_34.png" data-bd-imgshare-binded="1"></a>
+                <a href="#"><img src="${pageContext.request.contextPath}/images/slogen_34.png"
+                                 data-bd-imgshare-binded="1"></a>
                 <b>安全保证</b>
                 <span>多重保障机制 认证商城</span>
             </li>
-            <li><a href="#"><img src="${pageContext.request.contextPath}/images/slogen_28.png" data-bd-imgshare-binded="2"></a>
+            <li><a href="#"><img src="${pageContext.request.contextPath}/images/slogen_28.png"
+                                 data-bd-imgshare-binded="2"></a>
                 <b>正品保证</b>
                 <span>正品行货 放心选购</span>
             </li>
             <li>
-                <a href="#"><img src="${pageContext.request.contextPath}/images/slogen_30.png" data-bd-imgshare-binded="3"></a>
+                <a href="#"><img src="${pageContext.request.contextPath}/images/slogen_30.png"
+                                 data-bd-imgshare-binded="3"></a>
                 <b>七天无理由退换</b>
                 <span>七天无理由保障消费权益</span>
             </li>
             <li>
-                <a href="#"><img src="${pageContext.request.contextPath}/images/slogen_31.png" data-bd-imgshare-binded="4"></a>
+                <a href="#"><img src="${pageContext.request.contextPath}/images/slogen_31.png"
+                                 data-bd-imgshare-binded="4"></a>
                 <b>天天低价</b>
                 <span>价格更低，质量更可靠</span>
             </li>

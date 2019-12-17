@@ -4,21 +4,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="css/common.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="fonts/iconfont.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/reset.css" type="text/css">
-	<link rel="stylesheet" href="css/passwordIntensity.css" type="text/css">
-		<!--CSS RESET-->
-		<link rel="stylesheet" href="src/css/dialog.css" type="text/css">
-			<script src="${pageContext.request.contextPath}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-			<script src="${pageContext.request.contextPath}/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
-			<script src="${pageContext.request.contextPath}/js/common_js.js" type="text/javascript"></script>
-			<script src="${pageContext.request.contextPath}/js/footer.js" type="text/javascript"></script>
-			<script src="${pageContext.request.contextPath}/js/lrtk.js" type="text/javascript"></script>
-			<script src="${pageContext.request.contextPath}/src/jquery.dialog.min.js"></script>
-			<script type="text/javascript" src="${pageContext.request.contextPath}/js/passwordIntensity.js"></script>
-			<title>用户注册</title> <script type="text/javascript">
+	<link href="${pageContext.request.contextPath}/css/common.css" rel="stylesheet" type="text/css" />
+	<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="${pageContext.request.contextPath}/fonts/iconfont.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css" type="text/css">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/passwordIntensity.css" type="text/css">
+	<!--CSS RESET-->
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/src/css/dialog.css" type="text/css">
+	<script src="${pageContext.request.contextPath}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/js/common_js.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/js/footer.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/js/lrtk.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/src/jquery.dialog.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/passwordIntensity.js"></script>
+	<title>用户注册</title>
+	<script type="text/javascript">
 			
 				$(function() {
 					var show_num = [];
@@ -118,7 +119,7 @@
 					 * 校验密码
 					 */
 					function checkPwd() {
-						var $regPass = /^[a-zA-Z0-9.@#!$%]{3,16}$/;
+						var $regPass = /^[a-zA-Z0-9.@#!$%]{4,16}$/;
 						var $pass = $("input[name='password']").val();
 						if ($regPass.test($pass) == false) {
 							$.sendWarningToTop('密码由英文字母和数字组成的4-16位字符，以字母开头', 3000, function() {
@@ -240,8 +241,8 @@
 					var b = Math.floor(Math.random() * 256);
 					return "rgb(" + r + "," + g + "," + b + ")";
 				}
-			</script>
-			<style type="text/css">
+	</script>
+	<style type="text/css">
 #canvas {
 	vertical-align: middle;
 	box-sizing: border-box;
@@ -251,6 +252,7 @@
 	margin-left: 5px;
 	margin-bottom: 3px;
 }
+
 </style>
 </head>
 
@@ -259,7 +261,7 @@
 		<div class="top">
 			<div class="logo">
 				<div class="logo_link">
-					<a href="Index.html"><img src="${pageContext.request.contextPath}/images/logo.png"></a>
+					<a href="Index.html"><img src="images/logo.png"></a>
 				</div>
 				<div class="phone">
 					免费咨询热线：<b>400-567-4556</b>
@@ -268,17 +270,17 @@
 		</div>
 		<div class="regist">
 			<div class="log_img">
-				<img src="${pageContext.request.contextPath}/images/imgbg_03.png" width="611" height="425" />
+				<img src="images/imgbg_03.png" width="611" height="425" />
 			</div>
 			<div class="reg_c" id="registered">
 
 				<div class="bd">
 					<ul>
 						<form id='buyerFrom'
-							action="${pageContext.request.contextPath}/userServlet?flag=registered"
+							action="${pageContext.request.contextPath}/user//registerCode"
 							method="post">
 							<table border="0"
-								style="width:420px; font-size:14px; margin-top:20px;"
+								style="width:720px; font-size:14px; margin-top:20px;"
 								cellspacing="0" cellpadding="0">
 								<tbody>
 									<tr height="50" valign="top">
@@ -288,8 +290,7 @@
 												href="${pageContext.request.contextPath}/login.jsp"
 												style="color:#ff4e00;">我要登录</a></span></td>
 										<tr height="50">
-											<td align="right"><font color="#ff4e00">*</font>&nbsp;用户名
-												&nbsp;</td>
+										<td align="right"><font color="#ff4e00">*</font>&nbsp;用户名&nbsp;</td>
 											<td><input type="text" name="username" class="l_user"></td>
 										</tr>
 										<tr height="50">
