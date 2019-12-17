@@ -27,13 +27,18 @@ public class UserController {
     public String login(HttpServletRequest request, @RequestParam("username") String username, @RequestParam("password") String password){
 
         User user = userService.userLoginVerify(username,password);
-
-        if (username.equals(user.getUsername()) && password.equals(user.getPassword())){
-            request.getSession().setAttribute("user",user);
-            return "forward:/WEB-INF/jsp/index.jsp";
+        Integer message=0;
+        if (username.equals("") && password.equals("")){
+            message=2;//message为2，username和password为空
+        }else if(user==null){
+            message=1;//为1，用户名或密码有错
         }else{
+            //登录成功
+            request.getSession().setAttribute("user",user);
             return "index";
         }
+        request.setAttribute("message",message);
+        return "forward:/WEB-INF/jsp/login.jsp";//转发
     }
 
 

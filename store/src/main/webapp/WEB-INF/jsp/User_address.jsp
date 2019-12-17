@@ -8,21 +8,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet"
 			href="${pageContext.request.contextPath}/css/sweetalert.css" />
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="src/css/dialog.css">
-<link href="css/common.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="fonts/iconfont.css" rel="stylesheet" type="text/css" />
-<script src="${pageContext.request.contextPath}/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/common_js.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/footer.js" type="text/javascript"></script>
-<script src="${pageContext.request.contextPath}/lrtk.js" type="text/javascript"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/src/css/dialog.css">
+<link href="${pageContext.request.contextPath}/css/common.css" rel="stylesheet" type="text/css" />
+<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css" />
+<link href="${pageContext.request.contextPath}/fonts/iconfont.css" rel="stylesheet" type="text/css" />
+<script src="${pageContext.request.contextPath}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/common_js.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/footer.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/lrtk.js" type="text/javascript"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/layui/layui.js"></script>
-<link rel="stylesheet" href="layui/css/layui.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/assets/data.js"></script>
 <script type="text/javascript"
-			src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/sweetalert-dev.js"></script>
+			src="${pageContext.request.contextPath}/js/sweetalert-dev.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/assets/province.js"></script>
 <script src="${pageContext.request.contextPath}/src/jquery.dialog.min.js"></script>
 <script type="text/javascript">
@@ -252,7 +252,7 @@
 <title>用户中心-地址管理</title>
 </head>
 
-<body onload="today();">
+<body>
 	<!--顶部图层-->
 	<div id="header_top">
 		<div id="top">
@@ -759,7 +759,7 @@
 								<span>注：</span>只能添加5个收货地址信息。请勿用假名填写地址，如造成损失由收货人自己承担。
 							</div>
 							<div class="btn">
-								<input name="1" type="button" value="添加地址"  class="Add_btn" id="two"/>
+								<input name="1" type="button" value="添加地址" class="Add_btn" id="two"/>
 							</div>
 
 						</div>
