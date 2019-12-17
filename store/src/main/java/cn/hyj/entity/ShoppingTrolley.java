@@ -1,13 +1,17 @@
 package cn.hyj.entity;
 
+import java.util.List;
+
 public class ShoppingTrolley {
-    private Integer shoppingTrolleyId;
+    private Integer shoppingTrolleyId;//逻辑主键
 
-    private Integer commodityId;
+    private Integer commodityId;//商品id
 
-    private Integer userId;
+    private Integer userId;//用户id
 
-    private Integer status;
+    private Integer status;//商品状态
+
+    private List<Commodity> commodities;//商品列表
 
     public Integer getShoppingTrolleyId() {
         return shoppingTrolleyId;
@@ -39,5 +43,13 @@ public class ShoppingTrolley {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public List<Commodity> getCommodities() {
+        return commodities;
+    }
+
+    public void setCommodities(List<Commodity> commodities) {
+        this.commodities = commodities;
     }
 }
